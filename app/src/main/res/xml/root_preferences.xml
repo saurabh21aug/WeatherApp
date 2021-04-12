@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/unit">
+        <ListPreference
+            app:defaultValue="standard"
+            app:entries="@array/unit_entries"
+            app:entryValues="@array/unit_values"
+            app:key="unit"
+            app:title="Default value"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/bookmark">
+        <Preference
+            android:key="@string/clear"
+            android:title="Clear all bookmark" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
